@@ -1,14 +1,98 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /*text-align: center;*/
+  background: #ee0979; 
+  color: white;
+  font-family: 'Pacifico', cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.info {
+  margin-top: 15%;
+  font-size: 70px;
+  text-align: center;
+}
+
+.quote-box {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  line-height: .5;
+}
+.quote {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.1;
+  position: relative;
+  margin: 0;
+  } 
+.quote:before, .quote:after {
+  font-size: 6rem;
+  line-height: 2.5rem;
+  position: absolute;
+}
+.quote:before {
+  content: "“";
+  top: .25em;
+  left: -.5em;
+}
+.quote:after {
+  content: "”";
+  bottom: -.1em;
+  margin-left: .1em;
+  position: absolute;
+}
+.source {
+  font-size: 1.25rem;;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  text-align: right;
+  margin-right: 4em;
+}
+.source:before {
+  content: "—";
+}
+.citation {
+  font-style: italic;
+}
+.citation:before {
+  content: ", ";
+  font-style: normal;
+}
+.year:before {
+  content: ", ";
+  font-style: normal;
+}
+
+.loadQuote {
+  position: fixed;
+  width: 12em;
+  display: inline-block;
+  left: 50%;
+  margin-left: -6em;
+  bottom: 90px;
+  border-radius: 4px;
+  border: 2px solid rgba(255,255,255,.2);
+  color: #fff;
+  background-color: rgba(255,255,255,.2);
+  padding: 15px 0;
+  transition: .5s ;
+}
+.loadQuote:hover {
+  background-color: rgba(255,255,255,.25);
+}
+.loadQuote:focus {
+  outline: none;
+}
+
+@media (max-width: 420px) {
+  .quote {
+    font-size: 2.5rem;
+  }
+  .quote:before, .quote:after {
+    font-size: 3rem;
+  }
+  .source {
+    font-size: 1rem;
+  }
 }
