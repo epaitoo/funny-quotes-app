@@ -1,6 +1,21 @@
+# Funny Quotes App (React App)
+
+This is a React App which displays funny quotes at a click of a button.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## How it works
+* A stateful component of `App` is declared
+* A state of `quotes` is set to an array containing the quotes and a `randomQuotes` state initialize to null.
+* `isClicked` state is also set to false
+* A Stateless functional Component called `Quote` displays the quotes 
+* `showQuote()` method sets the state of `randomQuotes` to a random quote index
+* `showQuote()` also sets the state of `isClicked` to `true`
+* `randomItem` which is the `randomQuotes` state is passed as a prop to the `Quote` Component
+* `showQuote()` is also passed to an `onClick` handler on the button element on the App Component
+* An `Intro` page is shown at the launch of the app 
+* At the click of the button, it displays a random funny quotes
+
+
 
 In the project directory, you can run:
 
@@ -43,26 +58,3 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
