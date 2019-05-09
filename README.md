@@ -1,5 +1,7 @@
 # Funny Quotes App (React App)
 
+View demo [here](https://funnyquotes.netlify.com/)
+
 This is a React App which displays funny quotes at a click of a button.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
