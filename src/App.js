@@ -31,7 +31,10 @@ class App extends Component {
               randomItem = {randomQuote}
             />) 
             : 
-            (<p className="info">Funny Quotes At random...</p>)
+            (<div  className="info">
+              <p>Funny Quotes At random...</p>
+            </div>
+            )
           }
         <button className="loadQuote" onClick={this.showRandomQuote}>Load Quote</button>
       </div>
